@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #fff;
+  max-width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  list-style: none;
+}
+body {
+  background-image: linear-gradient(to right, #55328c, #804dc7);
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 35px 20px 0 30px;
+}
+
+.navigation_menu ul {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: space-between;
+}
+.navigation_item {
+  list-style: none;
+  color: #fff;
+  /* margin-right: 1.6rem; */
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.navigation_item img {
+  width: 25px;
+}
+
+.navigation_item.button_login {
+  border: 1px solid #fff;
+  padding: 15px 46px;
+  border-radius: 10px;
+}
+
+.navigation_item.dropdown {
+  border: 1px solid red;
+}
+.navigation_item.dropdown::before {
+  content: "";
+  background: url("/assets/image/estados-unidos.png") center no-repeat;
+}
+.container {
+  text-align: center;
+  width: 50%;
+  height: 60vh;
+  margin: 8% 25%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.subtitle {
+  color: #fab2d7;
+  font-size: 3.5rem;
+  text-align: right;
+}
+.title {
+  font-size: 12rem;
+}
+.container_message {
+  width: 21.5rem;
+  height: 50px;
+  background-color: #d94e96;
+  border-radius: 100px;
+  text-align: center;
+}
+.message {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 16px 64px;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.container_links {
+  width: 21.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+.links {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  justify-content: space-between;
+}
+.container_about_us {
+  display: flex;
+  align-items: top;
+  justify-content: space-around;
+  margin-bottom: 76px;
+}
+.logo_manual {
+  width: 40px;
+  background-color: #d94e96;
+  padding: 7px;
+  border-radius: 50%;
+  margin-right: 10px;
+  /* margin-bottom: 10px; */
+}
+.logo_manual img {
+  padding: auto;
+}
+
+.made_with {
+  margin-top: 10px;
+}
+
+.about_us_title {
+  color: #fab2d7;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.about_us_list li {
+  font-weight: 300;
+  margin: 10px;
+}
+.about_us_list li:hover {
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer {
+  border: 2px solid rgba(219, 222, 241, 0.3);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.address,
+.copyright {
+  margin-top: 46px;
+  margin-bottom: 92px;
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 420px) {
+  .navigation_menu {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    margin: 10vh auto 0;
+  }
+
+  .subtitle {
+    font-size: 1.75rem;
+  }
+  .title {
+    font-size: 6rem;
+  }
+  .container_with {
+    margin: 30vh auto 0;
+
+  }
+  .badge_width,
+  .about_us_title,
+  .about_us_list {
+    display: none;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .address,
+  .copyright {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+}
