@@ -18,7 +18,9 @@ body {
   justify-content: space-between;
   margin: 35px 20px 0 30px;
 }
-
+.navigation_menu_mobile {
+  display: none;
+}
 .navigation_menu ul {
   width: 800px;
   display: flex;
@@ -46,13 +48,17 @@ body {
   border-radius: 10px;
 }
 
-.navigation_item.dropdown {
-  border: 1px solid red;
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.navigation_item.dropdown::before {
-  content: "";
-  background: url("/assets/image/estados-unidos.png") center no-repeat;
+.dropdown p {
+  font-size: 3rem;
+  height: 25px;
+  padding-left: 5px;
 }
+
 .container {
   text-align: center;
   width: 50%;
@@ -170,7 +176,6 @@ body {
   }
   .container_with {
     margin: 30vh auto 0;
-
   }
   .badge_width,
   .about_us_title,
